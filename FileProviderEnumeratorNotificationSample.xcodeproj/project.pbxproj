@@ -22,6 +22,9 @@
 		75F5FA8927204FA00021181A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F5FA8727204FA00021181A /* MainInterface.storyboard */; };
 		75F5FA8D27204FA00021181A /* SampleFileProviderUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75F5FA8327204FA00021181A /* SampleFileProviderUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75F5FA9027204FA00021181A /* SampleFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75F5FA7227204FA00021181A /* SampleFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		75F5FA9B2720528C0021181A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5FA9A2720528C0021181A /* SessionManager.swift */; };
+		75F5FA9C2720528C0021181A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5FA9A2720528C0021181A /* SessionManager.swift */; };
+		75F5FA9D2720528C0021181A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5FA9A2720528C0021181A /* SessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,7 @@
 		75F5FA8A27204FA00021181A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F5FA98272050480021181A /* SampleFileProviderUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleFileProviderUI.entitlements; sourceTree = "<group>"; };
 		75F5FA99272050700021181A /* FileProviderEnumeratorNotificationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileProviderEnumeratorNotificationSample.entitlements; sourceTree = "<group>"; };
+		75F5FA9A2720528C0021181A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				75BDCAD527204CB900E77109 /* DocumentBrowserViewController.swift */,
 				75BDCAD727204CB900E77109 /* DocumentViewController.swift */,
 				75BDCAD927204CB900E77109 /* Document.swift */,
+				75F5FA9A2720528C0021181A /* SessionManager.swift */,
 				75BDCADB27204CB900E77109 /* Main.storyboard */,
 				75BDCADE27204CB900E77109 /* Assets.xcassets */,
 				75BDCAE027204CB900E77109 /* LaunchScreen.storyboard */,
@@ -309,6 +314,7 @@
 				75BDCADA27204CB900E77109 /* Document.swift in Sources */,
 				75BDCAD827204CB900E77109 /* DocumentViewController.swift in Sources */,
 				75BDCAD627204CB900E77109 /* DocumentBrowserViewController.swift in Sources */,
+				75F5FA9B2720528C0021181A /* SessionManager.swift in Sources */,
 				75BDCAD427204CB900E77109 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +325,7 @@
 			files = (
 				75F5FA7827204FA00021181A /* FileProviderExtension.swift in Sources */,
 				75F5FA7A27204FA00021181A /* FileProviderItem.swift in Sources */,
+				75F5FA9C2720528C0021181A /* SessionManager.swift in Sources */,
 				75F5FA7C27204FA00021181A /* FileProviderEnumerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F5FA9D2720528C0021181A /* SessionManager.swift in Sources */,
 				75F5FA8627204FA00021181A /* DocumentActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

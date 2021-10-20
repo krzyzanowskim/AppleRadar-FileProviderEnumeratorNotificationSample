@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SwiftUI
 
 class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate {
     
@@ -25,8 +25,42 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         // Specify the allowed content types of your application via the Info.plist.
         
         // Do any additional setup after loading the view.
+
+        additionalTrailingNavigationBarButtonItems = [
+            UIBarButtonItem(image: UIImage(systemName: "person.crop.circle"), style: .plain, target: self, action: #selector(showAccountAction(_:)))
+        ]
     }
-    
+
+    @objc func showAccountAction(_ sender: Any?) {
+
+        struct AccountView: View {
+            @EnvironmentObject private var sessionManager: SessionManager
+
+            var body: some View {
+                VStack(spacing: 20) {
+                    Spacer()
+
+                    switch sessionManager.status {
+                        case .signedIn:
+                            Button("Sign Out") {
+                                sessionManager.signOut()
+                            }
+                        case .signedOut:
+                            Button("Sign In") {
+                                sessionManager.signIn()
+                            }
+                    }
+
+                    Spacer()
+                }
+            }
+        }
+
+        let accountView = AccountView()
+            .environmentObject(SessionManager.shared)
+
+        show(UIHostingController(rootView: accountView), sender: sender)
+    }
     
     // MARK: UIDocumentBrowserViewControllerDelegate
     
