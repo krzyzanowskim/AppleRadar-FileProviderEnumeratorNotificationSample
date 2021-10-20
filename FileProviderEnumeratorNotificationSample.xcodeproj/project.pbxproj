@@ -77,6 +77,8 @@
 		75F5FA8527204FA00021181A /* DocumentActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentActionViewController.swift; sourceTree = "<group>"; };
 		75F5FA8827204FA00021181A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		75F5FA8A27204FA00021181A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F5FA98272050480021181A /* SampleFileProviderUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleFileProviderUI.entitlements; sourceTree = "<group>"; };
+		75F5FA99272050700021181A /* FileProviderEnumeratorNotificationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileProviderEnumeratorNotificationSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		75BDCAD227204CB900E77109 /* FileProviderEnumeratorNotificationSample */ = {
 			isa = PBXGroup;
 			children = (
+				75F5FA99272050700021181A /* FileProviderEnumeratorNotificationSample.entitlements */,
 				75BDCAD327204CB900E77109 /* AppDelegate.swift */,
 				75BDCAD527204CB900E77109 /* DocumentBrowserViewController.swift */,
 				75BDCAD727204CB900E77109 /* DocumentViewController.swift */,
@@ -164,6 +167,7 @@
 		75F5FA8427204FA00021181A /* SampleFileProviderUI */ = {
 			isa = PBXGroup;
 			children = (
+				75F5FA98272050480021181A /* SampleFileProviderUI.entitlements */,
 				75F5FA8527204FA00021181A /* DocumentActionViewController.swift */,
 				75F5FA8727204FA00021181A /* MainInterface.storyboard */,
 				75F5FA8A27204FA00021181A /* Info.plist */,
@@ -492,6 +496,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FileProviderEnumeratorNotificationSample/FileProviderEnumeratorNotificationSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67RAULRX93;
@@ -522,6 +527,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FileProviderEnumeratorNotificationSample/FileProviderEnumeratorNotificationSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67RAULRX93;
@@ -601,6 +607,7 @@
 		75F5FA9427204FA00021181A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleFileProviderUI/SampleFileProviderUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67RAULRX93;
@@ -626,6 +633,7 @@
 		75F5FA9527204FA00021181A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleFileProviderUI/SampleFileProviderUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67RAULRX93;
