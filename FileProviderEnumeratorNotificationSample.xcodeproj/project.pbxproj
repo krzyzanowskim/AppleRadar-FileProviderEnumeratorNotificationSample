@@ -14,7 +14,47 @@
 		75BDCADD27204CB900E77109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BDCADB27204CB900E77109 /* Main.storyboard */; };
 		75BDCADF27204CB900E77109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75BDCADE27204CB900E77109 /* Assets.xcassets */; };
 		75BDCAE227204CB900E77109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BDCAE027204CB900E77109 /* LaunchScreen.storyboard */; };
+		75F5FA7527204FA00021181A /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F5FA7427204FA00021181A /* UniformTypeIdentifiers.framework */; };
+		75F5FA7827204FA00021181A /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5FA7727204FA00021181A /* FileProviderExtension.swift */; };
+		75F5FA7A27204FA00021181A /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5FA7927204FA00021181A /* FileProviderItem.swift */; };
+		75F5FA7C27204FA00021181A /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5FA7B27204FA00021181A /* FileProviderEnumerator.swift */; };
+		75F5FA8627204FA00021181A /* DocumentActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5FA8527204FA00021181A /* DocumentActionViewController.swift */; };
+		75F5FA8927204FA00021181A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F5FA8727204FA00021181A /* MainInterface.storyboard */; };
+		75F5FA8D27204FA00021181A /* SampleFileProviderUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75F5FA8327204FA00021181A /* SampleFileProviderUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		75F5FA9027204FA00021181A /* SampleFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75F5FA7227204FA00021181A /* SampleFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75F5FA8B27204FA00021181A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75BDCAC827204CB900E77109 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F5FA8227204FA00021181A;
+			remoteInfo = SampleFileProviderUI;
+		};
+		75F5FA8E27204FA00021181A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75BDCAC827204CB900E77109 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F5FA7127204FA00021181A;
+			remoteInfo = SampleFileProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75F5FA9127204FA00021181A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				75F5FA8D27204FA00021181A /* SampleFileProviderUI.appex in Embed App Extensions */,
+				75F5FA9027204FA00021181A /* SampleFileProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		75BDCAD027204CB900E77109 /* FileProviderEnumeratorNotificationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileProviderEnumeratorNotificationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +66,36 @@
 		75BDCADE27204CB900E77109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75BDCAE127204CB900E77109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75BDCAE327204CB900E77109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F5FA7227204FA00021181A /* SampleFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F5FA7427204FA00021181A /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		75F5FA7727204FA00021181A /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderExtension.swift; sourceTree = "<group>"; };
+		75F5FA7927204FA00021181A /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		75F5FA7B27204FA00021181A /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		75F5FA7D27204FA00021181A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F5FA7E27204FA00021181A /* SampleFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleFileProvider.entitlements; sourceTree = "<group>"; };
+		75F5FA8327204FA00021181A /* SampleFileProviderUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleFileProviderUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F5FA8527204FA00021181A /* DocumentActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentActionViewController.swift; sourceTree = "<group>"; };
+		75F5FA8827204FA00021181A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		75F5FA8A27204FA00021181A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		75BDCACD27204CB900E77109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F5FA6F27204FA00021181A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F5FA7527204FA00021181A /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F5FA8027204FA00021181A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				75BDCAD227204CB900E77109 /* FileProviderEnumeratorNotificationSample */,
+				75F5FA7627204FA00021181A /* SampleFileProvider */,
+				75F5FA8427204FA00021181A /* SampleFileProviderUI */,
+				75F5FA7327204FA00021181A /* Frameworks */,
 				75BDCAD127204CB900E77109 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				75BDCAD027204CB900E77109 /* FileProviderEnumeratorNotificationSample.app */,
+				75F5FA7227204FA00021181A /* SampleFileProvider.appex */,
+				75F5FA8327204FA00021181A /* SampleFileProviderUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +141,36 @@
 			path = FileProviderEnumeratorNotificationSample;
 			sourceTree = "<group>";
 		};
+		75F5FA7327204FA00021181A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F5FA7427204FA00021181A /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75F5FA7627204FA00021181A /* SampleFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				75F5FA7727204FA00021181A /* FileProviderExtension.swift */,
+				75F5FA7927204FA00021181A /* FileProviderItem.swift */,
+				75F5FA7B27204FA00021181A /* FileProviderEnumerator.swift */,
+				75F5FA7D27204FA00021181A /* Info.plist */,
+				75F5FA7E27204FA00021181A /* SampleFileProvider.entitlements */,
+			);
+			path = SampleFileProvider;
+			sourceTree = "<group>";
+		};
+		75F5FA8427204FA00021181A /* SampleFileProviderUI */ = {
+			isa = PBXGroup;
+			children = (
+				75F5FA8527204FA00021181A /* DocumentActionViewController.swift */,
+				75F5FA8727204FA00021181A /* MainInterface.storyboard */,
+				75F5FA8A27204FA00021181A /* Info.plist */,
+			);
+			path = SampleFileProviderUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +181,52 @@
 				75BDCACC27204CB900E77109 /* Sources */,
 				75BDCACD27204CB900E77109 /* Frameworks */,
 				75BDCACE27204CB900E77109 /* Resources */,
+				75F5FA9127204FA00021181A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				75F5FA8C27204FA00021181A /* PBXTargetDependency */,
+				75F5FA8F27204FA00021181A /* PBXTargetDependency */,
 			);
 			name = FileProviderEnumeratorNotificationSample;
 			productName = FileProviderEnumeratorNotificationSample;
 			productReference = 75BDCAD027204CB900E77109 /* FileProviderEnumeratorNotificationSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		75F5FA7127204FA00021181A /* SampleFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F5FA9727204FA00021181A /* Build configuration list for PBXNativeTarget "SampleFileProvider" */;
+			buildPhases = (
+				75F5FA6E27204FA00021181A /* Sources */,
+				75F5FA6F27204FA00021181A /* Frameworks */,
+				75F5FA7027204FA00021181A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFileProvider;
+			productName = SampleFileProvider;
+			productReference = 75F5FA7227204FA00021181A /* SampleFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		75F5FA8227204FA00021181A /* SampleFileProviderUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F5FA9627204FA00021181A /* Build configuration list for PBXNativeTarget "SampleFileProviderUI" */;
+			buildPhases = (
+				75F5FA7F27204FA00021181A /* Sources */,
+				75F5FA8027204FA00021181A /* Frameworks */,
+				75F5FA8127204FA00021181A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFileProviderUI;
+			productName = SampleFileProviderUI;
+			productReference = 75F5FA8327204FA00021181A /* SampleFileProviderUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +239,12 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					75BDCACF27204CB900E77109 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					75F5FA7127204FA00021181A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					75F5FA8227204FA00021181A = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -119,6 +263,8 @@
 			projectRoot = "";
 			targets = (
 				75BDCACF27204CB900E77109 /* FileProviderEnumeratorNotificationSample */,
+				75F5FA7127204FA00021181A /* SampleFileProvider */,
+				75F5FA8227204FA00021181A /* SampleFileProviderUI */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +277,21 @@
 				75BDCAE227204CB900E77109 /* LaunchScreen.storyboard in Resources */,
 				75BDCADF27204CB900E77109 /* Assets.xcassets in Resources */,
 				75BDCADD27204CB900E77109 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F5FA7027204FA00021181A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F5FA8127204FA00021181A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F5FA8927204FA00021181A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +309,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75F5FA6E27204FA00021181A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F5FA7827204FA00021181A /* FileProviderExtension.swift in Sources */,
+				75F5FA7A27204FA00021181A /* FileProviderItem.swift in Sources */,
+				75F5FA7C27204FA00021181A /* FileProviderEnumerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F5FA7F27204FA00021181A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F5FA8627204FA00021181A /* DocumentActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75F5FA8C27204FA00021181A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F5FA8227204FA00021181A /* SampleFileProviderUI */;
+			targetProxy = 75F5FA8B27204FA00021181A /* PBXContainerItemProxy */;
+		};
+		75F5FA8F27204FA00021181A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F5FA7127204FA00021181A /* SampleFileProvider */;
+			targetProxy = 75F5FA8E27204FA00021181A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		75BDCADB27204CB900E77109 /* Main.storyboard */ = {
@@ -165,6 +357,14 @@
 				75BDCAE127204CB900E77109 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		75F5FA8727204FA00021181A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F5FA8827204FA00021181A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -289,6 +489,7 @@
 		75BDCAE727204CB900E77109 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +519,7 @@
 		75BDCAE827204CB900E77109 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +546,108 @@
 			};
 			name = Release;
 		};
+		75F5FA9227204FA00021181A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleFileProvider/SampleFileProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67RAULRX93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleFileProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleFileProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = best.swift.FileProviderEnumeratorNotificationSample.SampleFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75F5FA9327204FA00021181A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleFileProvider/SampleFileProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67RAULRX93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleFileProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleFileProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = best.swift.FileProviderEnumeratorNotificationSample.SampleFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75F5FA9427204FA00021181A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67RAULRX93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleFileProviderUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleFileProviderUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = best.swift.FileProviderEnumeratorNotificationSample.SampleFileProviderUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75F5FA9527204FA00021181A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67RAULRX93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleFileProviderUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleFileProviderUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = best.swift.FileProviderEnumeratorNotificationSample.SampleFileProviderUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -361,6 +665,24 @@
 			buildConfigurations = (
 				75BDCAE727204CB900E77109 /* Debug */,
 				75BDCAE827204CB900E77109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75F5FA9627204FA00021181A /* Build configuration list for PBXNativeTarget "SampleFileProviderUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F5FA9427204FA00021181A /* Debug */,
+				75F5FA9527204FA00021181A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75F5FA9727204FA00021181A /* Build configuration list for PBXNativeTarget "SampleFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F5FA9227204FA00021181A /* Debug */,
+				75F5FA9327204FA00021181A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
