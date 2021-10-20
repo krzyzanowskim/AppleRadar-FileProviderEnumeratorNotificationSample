@@ -16,6 +16,11 @@ class FileProviderExtension: NSFileProviderExtension {
     }
     
     override func item(for identifier: NSFileProviderItemIdentifier) throws -> NSFileProviderItem {
+
+        guard SessionManager.shared.status == .signedIn else {
+            throw NSFileProviderError(.notAuthenticated)
+        }
+
         // resolve the given identifier to a record in the model
         
         // TODO: implement the actual lookup
@@ -140,9 +145,14 @@ class FileProviderExtension: NSFileProviderExtension {
     // MARK: - Enumeration
     
     override func enumerator(for containerItemIdentifier: NSFileProviderItemIdentifier) throws -> NSFileProviderEnumerator {
+
+        guard SessionManager.shared.status == .signedIn else {
+            throw NSFileProviderError(.notAuthenticated)
+        }
+
         let maybeEnumerator: NSFileProviderEnumerator? = nil
         if (containerItemIdentifier == NSFileProviderItemIdentifier.rootContainer) {
-            // TODO: instantiate an enumerator for the container root
+            return FileProviderEnumerator(enumeratedItemIdentifier: containerItemIdentifier)
         } else if (containerItemIdentifier == NSFileProviderItemIdentifier.workingSet) {
             // TODO: instantiate an enumerator for the working set
         } else {
